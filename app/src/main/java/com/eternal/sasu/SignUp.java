@@ -19,6 +19,7 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthCredential;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.GoogleAuthProvider;
 
 public class SignUp extends AppCompatActivity {
@@ -42,6 +43,7 @@ public class SignUp extends AppCompatActivity {
                 CreateUser(Email.getText().toString(),Password.getText().toString());
             }
         });
+
     }
 
     private void CreateUser(String email, String password){
@@ -82,20 +84,6 @@ public class SignUp extends AppCompatActivity {
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
 
-                        } else {
-                        }
-
-                        // ...
-                    }
-                });
-    }
-
-    private void loginUser(String email, String password){
-        mAuth.signInWithEmailAndPassword(email, password)
-                .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
-                    @Override
-                    public void onComplete(@NonNull Task<AuthResult> task) {
-                        if (task.isSuccessful()) {
                         } else {
                         }
 

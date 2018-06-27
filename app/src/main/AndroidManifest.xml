@@ -11,14 +11,16 @@
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
         <activity android:name=".MainActivity" />
         <activity android:name=".LoginActivity">
+        </activity>
+        <activity android:name=".SignUp" />
+        <activity android:name=".JoinPhone" />
+        <activity android:name=".MenuGridView">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SignUp" />
-        <activity android:name=".JoinPhone"/>
     </application>
 
 </manifest>

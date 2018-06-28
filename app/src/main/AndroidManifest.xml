@@ -10,21 +10,17 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
         <activity android:name=".MainActivity" />
-        <activity android:name=".LoginActivity">
-        </activity>
+        <activity android:name=".LoginActivity" />
         <activity android:name=".SignUp" />
         <activity android:name=".JoinPhone" />
-        <activity android:name=".MenuGridView">
+        <activity android:name=".MenuGridView"></activity>
+        <activity android:name=".MenuDetail">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".MenuDetails"></activity>
-
-
+        <activity android:name=".MenuDetail_adm"></activity>
     </application>
 
 </manifest>

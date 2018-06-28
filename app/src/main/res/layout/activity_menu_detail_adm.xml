@@ -10,12 +10,25 @@
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="text" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <android.support.constraint.ConstraintLayout
         android:id="@+id/upbar"
         android:layout_width="match_parent"
         android:layout_height="55dp">
+
+        <ImageButton
+            android:id="@+id/back_button"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:background="@color/white"
+            android:src="@drawable/back2"
+            app:layout_constraintBottom_toTopOf="@+id/view4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
 
         <TextView
             android:id="@+id/textView"
@@ -30,13 +43,14 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <View
+            android:id="@+id/view4"
             android:layout_width="match_parent"
             android:layout_height="2dp"
             android:layout_centerInParent="true"
             android:background="@color/gray"
             app:layout_constraintBottom_toBottomOf="parent"
-            tools:layout_editor_absoluteX="0dp"
-            tools:ignore="MissingConstraints" />
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="0dp" />
 
     </android.support.constraint.ConstraintLayout>
 
